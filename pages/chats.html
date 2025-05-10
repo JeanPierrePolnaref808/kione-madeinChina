@@ -8,115 +8,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>чаты</title>
-   </head>
-
-    <style>
-        *{
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        html {
-            display: flex;
-            width: 100%;
-            height: auto;
-            align-items: center;
-            justify-content: center;
-        }
-
-        body {
-
-            display: flex;
-            flex-direction: column;
-            width: 85%;
-            max-width: 10264px;
-            background-color: rgb(75, 89, 61);
-                 
-        }
-
-        header {
-            height: 50px;
-            background-color: rgb(240, 255, 255);
-            width: 100%;
-            padding: 10px;
-            display: flex;
-            flex-direction: row;
-            gap: 20px;
-        }
-
-        header p {
-          font-family: "Boldonse", system-ui;
-          font-weight: 600;
-          font-style: normal;
-        }
-
-        header img {
-            height: 30px;
-        }
-        
-        main {
-            width: 100%;
-            background-color: rgb(125, 164, 129);
-            min-height: calc(100vh - 50px);
-        }
-
-        .mainForm {
-            display: flex;
-            flex-direction: column;
-            gap: 20px;
-            max-width: 400px;
-            width: 100%;
-            padding: 30px;
-            background: rgb(125, 164, 129);
-            border-radius: 10px;
-            box-shadow: 0 0 20px rgb(125, 164, 129);
-            backdrop-filter: blur;
-            border: none;
-        
+    
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Boldonse&display=swap" rel="stylesheet">
+     <link rel="../style" href="">
 
 
+     </head>
 
-
-        }
-
-     button{
-         width: 300px;
-         height: 40px;
-         margin-top: 20px;
-         outline: none;
-         background-color:#7ea9be ;
-         border: none;
-         border: 1px solid black;
-         border-radius: 6px;
-         cursor: pointer;
-         color: white;
-         font-size: 16px;
-         font-weight: 700;
-      }
-        
-       
-          .chatItem {
-            width: 300px;
-            height: 40px;
-            border-bottom: 30px;
-            display: flex;
-            flex-direction: column;
-            padding-left: 30px;
-            padding-right: 30px;
-            padding-top: 30px;
-            padding-bottom:30px ;
-           }
-
-            .chatAvatar{
-
-
-
-             }
-
-
-
-       </style>
+    
 </head>
 <body>
 
@@ -126,15 +27,18 @@
     </header>
     
     <main>
-      <div class="chatItem">
+      <div class="wrapper">
+        <div class="chatItem">
 
-        <img class="chatAvatar" src="/logo.webp">
-        <div class="chatBody">
-        <p class="chatUserName">Путин</p>
-         <p class="chatLastMessage">Сосал?</p>
+            <img class="chatAvatar" src="/logo.webp">
+            <div class="chatBody">
+            <p class="chatUserName">Путин:</p>
+             <p class="chatLastMessage">Сосал?</p>
+          </div>
+           <p class="chatTime">18:30</p>
       </div>
-       <p class="chatTime"></p>
 
+      
     </main>
 
 
